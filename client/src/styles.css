@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  height: 100px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #333;
+  color: #f2f2f2;
+  padding: 10px;
+}
+
+
+h1 {
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+
+h2 {
+  font-size: 18px;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  margin: 0;
+  font-size: 18px;
+}
+
+.navbar-toggle {
+  display: none;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  margin-left: 20px;
+}
+
+.navbar-link a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link a svg {
+  margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .navbar-links.mobile-menu-open {
+    display: flex;
+  }
+
+  .navbar-link {
+    margin: 10px 0;
+  }
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: 700px;
+}
+
+.login-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container label {
+  margin-bottom: 10px;
+}
+
+.login-container input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  padding: 8px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+video {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  img {
+    max-width: 200px;
+  }
+
+  video {
+    max-width: 200px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .login-container {
+    max-width: 100%;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
